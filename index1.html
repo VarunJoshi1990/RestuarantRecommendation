@@ -1,0 +1,32 @@
+<head><!-- Load c3.css -->
+    <link href=".\c3-0.4.11\c3.css" rel="stylesheet" type="text/css">
+
+    <!-- Load d3.js and c3.js -->
+    <script src="https://d3js.org/d3.v3.min.js" charset="utf-8"></script>
+    <script src=".\c3-0.4.11\c3.min.js"></script>
+    </head>
+    <body>
+    <p> The current iteration is: 1000</p><p>The current recommendation is: J</p>
+    <div id="chart" height=600px></div>
+    <script>
+
+    var chart = c3.generate({
+    data: {
+        columns: [
+            ['freq',
+            346, 2, 13, 1, 0, 1, 0, 1, 0, 641, 2, 1, 0, 1, 1], 
+        ['rating (x10)',
+        30.346820809248548, 25.0, 25.384615384615383, 13.927978663679969, 10.0, 13.954088599011556, 20.0, 13.570393075628985, 14.473508030564027, 30.8125, 25.0, 14.577915331605315, 10.0, 10.0, 10.0],
+            ['dist (x10)', 17.674,38.9,62.7,13.2,3.8,21.8,24.4,12,25.1,.7,8.4,33.4,16.23,56.1,15.7],
+        ],
+        type: 'bar',
+        types: {
+            'dist (x10)': 'line',
+            'rating (x10)': 'line',
+        }
+    }
+});
+
+</script>
+</body>
+  
